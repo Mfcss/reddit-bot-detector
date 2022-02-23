@@ -2,7 +2,7 @@
 
 This project is a WIP of a Chrome V3 extension, aiming to detect bots specifically on [Reddit](https://reddit.com/).
 
-##Introduction
+## Introduction
 
 Reddit is a growing social media platform, and thus it's also seeing an uptick in bots trying to influence opinions on diverse subreddits.
 
