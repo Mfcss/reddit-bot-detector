@@ -9,15 +9,20 @@
         "32": "icons/bot-32.png",
         "48": "icons/bot-48.png"
     },
-    "background": {
-        "service_worker": "background.js",
-        "type": "module"
-      },
     "permissions": [
         "storage",
         "activeTab",
+        "tabs",
         "scripting"
     ],
+    "content_scripts": [
+        {
+          "matches": ["*://www.reddit.com/*", "*://old.reddit.com/*"],
+          "js": ["content.js"],
+          "css": ["content.css"],
+          "run_at": "document_start"
+        }
+      ],
     "host_permissions": [
         "https://www.reddit.com/*"
     ]

@@ -72,12 +72,11 @@ async function isBot(username){
     
     words_ratio = ratio/Object.keys(keywords).length;
     
-    if (words_ratio > 1){
-        console.log(username);
+    if (words_ratio > 1)
         return true;
-    }else{
+    else
        return false;
-    }
+    
 }
 
 async function checkUser(el, name) {

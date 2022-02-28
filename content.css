@@ -1,0 +1,5 @@
+a.is-bot::after {
+  content: '[BOT]';
+  color: red;
+  margin-left: .25em;
+}
