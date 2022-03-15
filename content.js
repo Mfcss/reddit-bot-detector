@@ -71,15 +71,14 @@ async function isBot(username){
     }
     
     words_ratio = ratio/Object.keys(keywords).length;
-    
+  
     if (words_ratio > 1)
         return true;
     else
        return false;
-    
 }
 
-async function checkUser(el, name) {
+async function checkUser(name) {
   const bot = await isBot(name);
   localStorage[LS_KEY + name] = bot ? '1' : '0';
   delete promises[name];
